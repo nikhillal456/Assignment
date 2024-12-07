@@ -1,5 +1,4 @@
 nginx:
-  namespace: nginx
   upstreamUrl: "my-upstream-url"
   upstreamPort: 8080
   replicas: 1
