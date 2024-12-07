@@ -16,7 +16,10 @@ db:
     APP_ENV: dev
   containerPorts:
       mysql: 3306
-  rootPassword: "wordpress"
+  secrets:
+    MYSQL_PASSWORD: wordpress
+    MYSQL_ROOT_PASSWORD: wordpress
+    MARIADB_ROOT_PASSWORD: wordpress
   # volume:
   #     name: nginx-proxy-cache-store
   #     mount:
