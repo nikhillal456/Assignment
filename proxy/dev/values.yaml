@@ -1,0 +1,12 @@
+nginx:
+  namespace: nginx
+  upstreamUrl: "nginx-proxy"
+  upstreamPort: 8081
+  replicas: 1
+  image:
+    repository: nginx
+    tag: "1.19.10"
+  service:
+    type: LoadBalancer
+    port: 80
+
