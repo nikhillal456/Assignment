@@ -1,4 +1,5 @@
 nginx:
+  namespace: nginx
   upstreamUrl: "nginx-proxy"
   upstreamPort: 8081
   replicas: 1
